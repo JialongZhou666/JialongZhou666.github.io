@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的名字 - 个人主页</title>
+    <title>Jialong Zhou - Personal Homepage</title>
     <style>
         * {
             margin: 0;
@@ -58,7 +58,7 @@
             border-bottom: 1px solid #e0e0e0;
         }
         
-        .news-item, .pub-item {
+        .news-item, .pub-item, .experience-item {
             margin: 15px 0;
             padding-left: 20px;
         }
@@ -84,62 +84,169 @@
         li {
             margin: 8px 0;
         }
+
+        .pub-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .pub-authors {
+            margin-bottom: 3px;
+        }
+
+        .pub-venue {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .pub-links {
+            margin-top: 5px;
+        }
+
+        .experience-title {
+            font-weight: bold;
+        }
+
+        .experience-date {
+            color: #666;
+            float: right;
+        }
+
+        .experience-description {
+            margin-top: 5px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>你的名字</h1>
-        <div class="subtitle">博士研究生，计算机科学与技术系</div>
-        <div class="subtitle">XX大学</div>
-        <div class="contact">Email: your_email [AT] university [DOT] edu [DOT] cn</div>
+        <h1>Jialong Zhou</h1>
+        <div class="subtitle">PhD Student, Department of Informatics</div>
+        <div class="subtitle">King's College London</div>
+        <div class="contact">Email: <a href="mailto:jialong.zhou@kcl.ac.uk">jialong.zhou@kcl.ac.uk</a></div>
     </header>
 
     <section class="bio">
         <p>
-            我是XX大学计算机科学与技术系的博士研究生，导师是XXX教授。
-            我的研究兴趣主要包括机器学习、深度学习及其在计算机视觉中的应用。
-            目前，我专注于深度学习模型的鲁棒性、安全性和可信赖性研究。
+            I am a PhD student in the Department of Informatics at King's College London, 
+            advised by Prof. <a href="#">Grigorios Loukides</a>.
+            Before that, I received my M.Phil. degree in Computer Science from 
+            The Hong Kong Polytechnic University in 2024, advised by Prof. <a href="#">Kai Zhou</a>, 
+            and my B.E. degree in Computer Science and Technology from 
+            Northwestern Polytechnical University in 2022.
+        </p>
+        <p style="margin-top: 15px;">
+            My research interests span algorithms and data mining (particularly at scale), 
+            as well as machine learning topics including graph neural networks, LLM agents, 
+            and adversarial ML.
+        </p>
+        <p style="margin-top: 15px;">
+            I am open to opportunities for collaboration and academic exchange in any form. 
+            Please feel free to contact me if you are interested.
         </p>
     </section>
 
     <section>
-        <h2>最新消息</h2>
+        <h2>News</h2>
         <div class="news-item">
-            <span class="news-date">[2025-11]</span> 一篇论文被 XX 会议接收！
-        </div>
-        <div class="news-item">
-            <span class="news-date">[2025-09]</span> 开始在XX实验室进行访问研究。
+            <span class="news-date">[2025-09]</span> One paper accepted at NeurIPS 2025!
         </div>
     </section>
 
     <section>
-        <h2>发表论文</h2>
+        <h2>Selected Publications</h2>
+        
         <div class="pub-item">
-            <strong>论文标题</strong><br>
-            作者1, 作者2, <strong>你的名字</strong><br>
-            <em>会议/期刊名称</em>, 2025<br>
-            <a href="#">[论文链接]</a> <a href="#">[代码]</a>
+            <div class="pub-title">GUARDIAN: Safeguarding LLM Multi-Agent Collaborations with Temporal Graph Modeling</div>
+            <div class="pub-authors"><strong>Jialong Zhou</strong>, Lichao Wang, Xiao Yang</div>
+            <div class="pub-venue">Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/abs/2505.19234" target="_blank">[Paper]</a>
+                <a href="https://github.com/JialongZhou666/GUARDIAN" target="_blank">[Code]</a>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">Graph Anomaly Detection at Group Level: A Topology Pattern Enhanced Unsupervised Approach</div>
+            <div class="pub-authors">Xing Ai, <strong>Jialong Zhou</strong>, Yulin Zhu, Gaolei Li, Tomasz P Michalak, Xiapu Luo, Kai Zhou</div>
+            <div class="pub-venue">2024 IEEE 40th International Conference on Data Engineering (ICDE), 2024</div>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10597723" target="_blank">[Paper]</a>
+                <a href="https://github.com/STiL-Team/Topology-Pattern-Enhanced-Unsupervised-Group-level-Graph-Anomaly-Detection" target="_blank">[Code]</a>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">Black-Box Attacks Against Signed Graph Analysis via Balance Poisoning</div>
+            <div class="pub-authors"><strong>Jialong Zhou</strong>, Yuni Lai, Jian Ren, Kai Zhou</div>
+            <div class="pub-venue">2024 International Conference on Computing, Networking and Communications (ICNC), 2024</div>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10556322" target="_blank">[Paper]</a>
+                <a href="https://github.com/JialongZhou666/Balance-Attack" target="_blank">[Code]</a>
+            </div>
         </div>
     </section>
 
     <section>
-        <h2>教育经历</h2>
+        <h2>Education</h2>
         <ul>
-            <li>博士，计算机科学，XX大学，2022-至今</li>
-            <li>本科，计算机科学，XX大学，2018-2022</li>
+            <li><strong>Ph.D. in Computer Science</strong>, King's College London, 2024 - Present</li>
+            <li><strong>M.Phil. in Computer Science</strong>, The Hong Kong Polytechnic University, 2022 - 2024</li>
+            <li><strong>B.E. in Computer Science and Technology</strong>, Northwestern Polytechnical University, 2018 - 2022</li>
         </ul>
     </section>
 
     <section>
-        <h2>荣誉奖项</h2>
+        <h2>Experience</h2>
+        
+        <div class="experience-item" style="clear: both; overflow: hidden;">
+            <span class="experience-title">Graduate Teaching Assistant</span>
+            <span class="experience-date">Oct. 2025 - Present</span>
+            <div style="clear: both;"></div>
+            <div class="experience-description">
+                King's College London<br>
+                7CCSMDDW – Databases, Data Warehousing and Information Retrieval
+            </div>
+        </div>
+
+        <div class="experience-item" style="clear: both; overflow: hidden;">
+            <span class="experience-title">Research Intern</span>
+            <span class="experience-date">May 2024 - Nov. 2024</span>
+            <div style="clear: both;"></div>
+            <div class="experience-description">
+                Tsinghua University
+            </div>
+        </div>
+
+        <div class="experience-item" style="clear: both; overflow: hidden;">
+            <span class="experience-title">Software Development Engineer (Intern)</span>
+            <span class="experience-date">Aug. 2021 - Sep. 2021</span>
+            <div style="clear: both;"></div>
+            <div class="experience-description">
+                Alibaba Cloud Co., Ltd.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Awards & Honors</h2>
         <ul>
-            <li>XX奖学金，2024</li>
-            <li>优秀毕业生，2022</li>
+            <li>National Undergraduate Scholarship (Top 1%), 2019</li>
+            <li>ICPC Shaanxi Provincial Bronze Award, 2019</li>
         </ul>
     </section>
 
-    <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #666; font-size: 0.9em;">
-        © 2025 你的名字 · Powered by GitHub Pages
+    <section>
+        <h2>Leadership & Involvement</h2>
+        <ul>
+            <li><strong>Vice Chairman & Head of R&D</strong>, Huawei Club, NPU, Sep. 2019 - July 2020</li>
+            <li><strong>Assets Department Officer</strong>, Sunshine Volunteer Association, NPU, Sep. 2019 - June 2020</li>
+            <li><strong>Member</strong>, School of Computer Science Student Union Publicity Department, NPU, Sep. 2018 - June 2019</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #666; font-size: 0.9em; text-align: center;">
+        © 2025 Jialong Zhou · Powered by GitHub Pages
     </footer>
 </body>
 </html>
