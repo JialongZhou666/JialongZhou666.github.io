@@ -146,9 +146,21 @@
             padding-left: 20px;
         }
 
+        .pub-title-row {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            margin-bottom: 5px;
+        }
+
         .pub-title {
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 0;
+        }
+
+        .pub-links {
+            flex-shrink: 0;
+            margin-top: 0;
         }
 
         .pub-authors {
@@ -158,10 +170,6 @@
         .pub-venue {
             font-style: italic;
             margin-bottom: 5px;
-        }
-
-        .pub-links {
-            margin-top: 5px;
         }
 
         .experience-title, .teaching-title {
@@ -245,7 +253,7 @@
     <header>
         <div class="header-content">
             <h1>Jialong Zhou</h1>
-            <div class="subtitle">PhD Student, Department of Informatics</div>
+            <div class="subtitle">PhD Candidate, Department of Informatics</div>
             <div class="subtitle">King's College London</div>
             <div class="contact">Email: <a href="mailto:jialong.zhou@kcl.ac.uk">jialong.zhou@kcl.ac.uk</a></div>
             <div class="social-links">
@@ -276,7 +284,7 @@
 
     <section class="bio">
         <p>
-            I am a PhD student in Computer Science at King's College London, advised by Prof. <a href="https://www.kcl.ac.uk/people/grigorios-loukides" target="_blank">Grigorios Loukides</a>.
+            I am a PhD candidate in Computer Science at King's College London, advised by Prof. <a href="https://www.kcl.ac.uk/people/grigorios-loukides" target="_blank">Grigorios Loukides</a>.
             Previously, I received my M.Phil. from The Hong Kong Polytechnic University in 2024, advised by Prof. <a href="https://www4.comp.polyu.edu.hk/~kaizhou/index.html" target="_blank">Kai Zhou</a>, and B.E. from Northwestern Polytechnical University in 2022.
         </p>
         <p style="margin-top: 15px;">
@@ -313,33 +321,47 @@
         </div>
         
         <div class="pub-item">
-            <div class="pub-title">GUARDIAN: Safeguarding LLM Multi-Agent Collaborations with Temporal Graph Modeling</div>
-            <div class="pub-authors"><strong>Jialong Zhou</strong>, Lichao Wang, Xiao Yang</div>
-            <div class="pub-venue">Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
-            <div class="pub-links">
-                <a href="https://arxiv.org/abs/2505.19234" target="_blank">[Paper]</a>
-                <a href="https://github.com/JialongZhou666/GUARDIAN" target="_blank">[Code]</a>
+            <div class="pub-title-row">
+                <div class="pub-title">Subtree Mode and Applications</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2511.01376" target="_blank">[Paper]</a>
+                </div>
             </div>
+            <div class="pub-authors"><strong>Jialong Zhou</strong>*, Ben Bals*, Matei Tinca, Ai Guan, Panagiotis Charalampopoulos, Grigorios Loukides, Solon P Pissis</div>
+            <div class="pub-venue">2026 IEEE 42nd International Conference on Data Engineering (ICDE), 2026</div>
         </div>
 
         <div class="pub-item">
-            <div class="pub-title">Graph Anomaly Detection at Group Level: A Topology Pattern Enhanced Unsupervised Approach</div>
+            <div class="pub-title-row">
+                <div class="pub-title">GUARDIAN: Safeguarding LLM Multi-Agent Collaborations with Temporal Graph Modeling</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2505.19234" target="_blank">[Paper]</a>
+                </div>
+            </div>
+            <div class="pub-authors"><strong>Jialong Zhou</strong>, Lichao Wang, Xiao Yang</div>
+            <div class="pub-venue">Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title-row">
+                <div class="pub-title">Graph Anomaly Detection at Group Level: A Topology Pattern Enhanced Unsupervised Approach</div>
+                <div class="pub-links">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10597723" target="_blank">[Paper]</a>
+                </div>
+            </div>
             <div class="pub-authors">Xing Ai, <strong>Jialong Zhou</strong>, Yulin Zhu, Gaolei Li, Tomasz P Michalak, Xiapu Luo, Kai Zhou</div>
             <div class="pub-venue">2024 IEEE 40th International Conference on Data Engineering (ICDE), 2024</div>
-            <div class="pub-links">
-                <a href="https://ieeexplore.ieee.org/abstract/document/10597723" target="_blank">[Paper]</a>
-                <a href="https://github.com/STiL-Team/Topology-Pattern-Enhanced-Unsupervised-Group-level-Graph-Anomaly-Detection" target="_blank">[Code]</a>
-            </div>
         </div>
 
         <!-- <div class="pub-item">
-            <div class="pub-title">Black-Box Attacks Against Signed Graph Analysis via Balance Poisoning</div>
+            <div class="pub-title-row">
+                <div class="pub-title">Black-Box Attacks Against Signed Graph Analysis via Balance Poisoning</div>
+                <div class="pub-links">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10556322" target="_blank">[Paper]</a>
+                </div>
+            </div>
             <div class="pub-authors"><strong>Jialong Zhou</strong>, Yuni Lai, Jian Ren, Kai Zhou</div>
             <div class="pub-venue">2024 International Conference on Computing, Networking and Communications (ICNC), 2024</div>
-            <div class="pub-links">
-                <a href="https://ieeexplore.ieee.org/abstract/document/10556322" target="_blank">[Paper]</a>
-                <a href="https://github.com/JialongZhou666/Balance-Attack" target="_blank">[Code]</a>
-            </div>
         </div> -->
     </section>
 
@@ -413,7 +435,7 @@
     </section>
 
     <footer>
-        © 2026.01 Jialong Zhou · Powered by GitHub Pages
+        © 2026.02 Jialong Zhou · Powered by GitHub Pages
         <div class="visitor-counter">
             <img src="https://visitor-badge.laobi.icu/badge?page_id=jialongzhou.homepage&left_color=gray&right_color=lightgray&left_text=Visitors" alt="Visitor Counter">
         </div>
