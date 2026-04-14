@@ -216,28 +216,25 @@
             text-align: center;
         }
 
-        .visitor-stats {
-            margin-top: 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
         .visitor-counter {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            opacity: 0.72;
+            display: inline-block;
+            margin-top: 8px;
+            opacity: 0.6;
         }
 
         .visitor-counter img,
         .flag-counter img {
             vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .flag-counter-wrapper {
+            margin-top: 10px;
         }
 
         .flag-counter {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             opacity: 0.92;
         }
 
@@ -442,11 +439,10 @@
 
     <footer>
         © Mar 2026 Jialong Zhou · Powered by GitHub Pages
-        <div class="visitor-stats">
-            <div class="visitor-counter">
-                <span>Total visits</span>
-                <img src="https://visitor-badge.laobi.icu/badge?page_id=jialongzhou.homepage&amp;left_color=gray&amp;right_color=lightgray&amp;left_text=Visitors" alt="Visitor Counter">
-            </div>
+        <div class="visitor-counter">
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=jialongzhou.homepage&amp;left_color=gray&amp;right_color=lightgray&amp;left_text=Visitors" alt="Visitor Counter">
+        </div>
+        <div class="flag-counter-wrapper">
             <a class="flag-counter" href="https://info.flagcounter.com/ih2W" target="_blank" rel="noopener noreferrer" aria-label="View visitor countries">
                 <img src="https://s01.flagcounter.com/count/ih2W/bg_F8F8F8/txt_555555/border_DADADA/columns_4/maxflags_12/viewers_Visitors+by+Country/labels_1/pageviews_1/flags_0/percent_0/" alt="Visitor countries">
             </a>
