@@ -217,20 +217,13 @@
             opacity: 0.6;
         }
 
-        .visitor-counter img,
-        .flag-counter img {
+        .visitor-counter img {
             vertical-align: middle;
             margin-left: 5px;
         }
 
         .flag-counter-wrapper {
-            margin-top: 10px;
-        }
-
-        .flag-counter {
-            display: inline-flex;
-            align-items: center;
-            opacity: 0.92;
+            display: none;
         }
 
         /* Responsive design for mobile */
@@ -432,9 +425,9 @@
         <div class="visitor-counter">
             <img src="https://visitor-badge.laobi.icu/badge?page_id=jialongzhou.homepage&amp;left_color=gray&amp;right_color=lightgray&amp;left_text=Visitors" alt="Visitor Counter">
         </div>
-        <div class="flag-counter-wrapper">
-            <a class="flag-counter" href="https://info.flagcounter.com/ih2W" target="_blank" rel="noopener noreferrer" aria-label="View visitor countries">
-                <img src="https://s01.flagcounter.com/count/ih2W/bg_F8F8F8/txt_555555/border_DADADA/columns_4/maxflags_12/viewers_Visitors+by+Country/labels_1/pageviews_0/flags_0/percent_0/" alt="Visitor countries">
+        <div class="flag-counter-wrapper" aria-hidden="true">
+            <a class="flag-counter" href="https://info.flagcounter.com/ih2W" target="_blank" rel="noopener noreferrer">
+                <img src="https://s01.flagcounter.com/count/ih2W/bg_F8F8F8/txt_555555/border_DADADA/columns_4/maxflags_12/viewers_Visitors+by+Country/labels_1/pageviews_0/flags_0/percent_0/" alt="">
             </a>
         </div>
     </footer>
